@@ -1,0 +1,31 @@
+body{
+    background-color: #eecde2;
+    font-family: 'Merriweather'; color: #424242;
+}
+    ul.nav { 
+        background-color: #df87bb;
+        padding: 50px;
+        font-size: 20px;
+        color: #df87bb;
+
+        }
+    ul.nav li a {
+        width:0px;
+        font-family: 'Merriweather'; color: #eecde2;
+        color: #eecde2;
+        text-align:center;
+        text-decoration:none;
+    }
+    section{
+        color: #424242;
+        font-size: 10px;
+        text-align: center;
+    }
+    .Div1{
+        color: #424242;
+        font-size: 100x;
+        text-align: center;
+    }
+
+    
+
