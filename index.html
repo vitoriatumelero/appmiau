@@ -2,66 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitória Tumelero</title>
-    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Receitando.com</title>
 </head>
+<style>
+    h1 {
+    color: #528657;
+    font-size: 1cm;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5;
+    text-align: left;
+    }
+    h2 {
+    color: #528657;
+    font-size: 0.5cm;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5;
+    text-align: left;
+    }
+    .menu_1{
+        background-color:  #E4DEDC;
+        padding: 10px;
+    }
+    .menu_2{
+        background-color:  #528657;
+        padding: 155px;
+    }
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    #profile-icon {
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  #528657;
+    text-decoration: none;
+    font-size: 14px;
+    }
+    #profile-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+    }
+    .square {
+        width: 90px;
+        padding:90px;
+        background-color: #E4DEDC;
+        border-radius: 15px;
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+   
+  
+</style>
+
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">SOBRE MIM !!</a>
-                </li>
-                <li>
-                    <a href="miau.html">PROJETOS</a>
-                </li>
-                <li>
-                    <a href="contact.html">CONTATO :)</a>
-                </li>
-            </ul>
-        </nav>
-        <header>
-            <div class="center">
-                <img src="./img/vitoria.JPEG"></img>
-            </div>
-            <h1> Vitória Tumelero dos Santos</h1>
-            <h2> Programadora</h2>
-        </header>
-        <main>
-            <section>
-                <h3>Sobre mim</h3>
-                <p>
-                    Meu nome é Vitória, e sou uma profissional apaixonada por tecnologia, dedicada ao constante aprimoramento e à busca por desafios significativos na área de Ciência da Computação. Minha trajetória é marcada por uma ética de trabalho incansável e um compromisso inabalável com a excelência em tudo o que empreendo.
-                </p>
-            </section>
-            <section>
-                <h3>Formação</h3>
-                <p>
-                    Sou graduada em Ciência da Computação pela renomada Universidade Federal do Rio Grande do Sul (UFRGS), onde adquiri uma base sólida de conhecimentos e habilidades técnicas. Em busca de um aprimoramento mais profundo, conquistei uma pós-graduação em Inteligência Artificial na USP, consolidando meu compromisso com a educação continuada e a busca incessante por conhecimento em níveis mais avançados.
-                </p>
-            </section>
-            <section>
-                <h3>Cursos</h3>
-                <p>
-                    Busquei aprimorar minhas habilidades por meio de cursos especializados, como o "Advanced Machine Learning" da Stanford University, "Deep Learning Specialization" da Universidade de Toronto e o "Python for Data Science and Machine Learning Bootcamp" pela Udemy. Esses cursos enriqueceram significativamente meu conhecimento em Inteligência Artificial e programação avançada, preparando-me para enfrentar desafios complexos na área tecnológica. Minha busca ativa por atualizações reflete meu compromisso em permanecer na vanguarda das últimas inovações.
-                </p>
-            </section>
-        </main>
-        <footer>
-            <a href="https://github.com/vitoriatumelero" target="_blank" rel="noopener noreferrer">
-                <img src="./img/github.svg"></img>
-                <p>Github</p>
-            </a>
-            <a href="https://twitter.com/vitoriatimeline" target="_blank" rel="noopener noreferrer">
-                <img src="./img/twitter.svg"></img>
-                <p>Twitter</p>
-            </a>
-            <a href="https://instagram.com/vitoriatumelero" target="_blank" rel="noopener noreferrer">
-                <img src="./img/instagram.svg"></img>
-                <p>Instagram</p>
-            </a>
-        </footer>
-    </div>
+    <header class="menu_1">
+        <h1>Receitando.com</h1>
+        <h2>As receitas mais práticas em um só lugar!</h2>
+        <a id="profile-icon" href="#">
+            <img src="imagens\perfil.jpg" alt="Ícone de perfil">
+            Meu Perfil
+          </a>
+    </header>
+    <main class="menu_2">
+      <div class="container">
+        <div class="square">
+          <div class = "img">
+              <img src="imagens\cafe.jpg" alt="Imagem 1" >
+          </div>
+        </div>
+        <div class="square">
+            <img src="imagens\almoco.jpg" alt="Imagem 2">
+        </div>
+        <div class="square">
+            <img src="imagens\janta.png" alt="Imagem 3">
+        </div>
+        <div class="square">
+            <img src="imagens\sobremesa.jpg" alt="Imagem 4">
+        </div>
+        <div class="square">
+            <img src="imagens\ld.jpg" alt="Imagem 5">
+        </div>
+        <div class="square">
+            <img src="imagens\ls.jpg" alt="Imagem 6">
+        </div>
+        <div class="square">
+            <img src="imagens\aperitivo.jpg" alt="Imagem 7">
+        </div>
+        <div class="square">
+            <img src="imagens\bebidas.jpg" alt="Imagem 8">
+        </div>
+
+    </main>
+    <button onclick="alert('Você clicou no botão!')">Clique-me</button>
 </body>
 </html>
+
+
+
+
