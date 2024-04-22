@@ -13,6 +13,11 @@ ul{
 a{
     color: aliceblue;
     text-decoration: none;
+    transition: 0.3s ease;
+
+}
+a:hover{
+transform: scale(1.2);
 }
 header img{
     width: 150px;
@@ -44,3 +49,7 @@ footer p{
 nav a:hover{
     color: #556b2f;
 }
+li:hover{
+transform: scale(1.2);
+}
+

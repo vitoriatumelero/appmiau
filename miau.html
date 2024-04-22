@@ -9,10 +9,11 @@
 <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
 <body>
     <div class="container" >
+      <!--alterna entre as telas de login e cadastro -->
       <a class="links" id="paracadastro"></a>
       <a class="links" id="paralogin"></a>
         <div class="center">
-        <img src="./img/logomiau.png"></img>
+        <img src="logomiau.png" height="100" width="100"></img>
         </div>
       <div class="content">      
         <!--FORMULÁRIO DE LOGIN-->
@@ -20,13 +21,13 @@
           <form method="post" action=""> 
             <h1>Login</h1> 
             <p> 
-              <label for="nome_login">Seu nome</label>
-              <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+              <label for="email_login">Seu email</label>
+              <input id="email_login" name="email_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
             </p>
              
             <p> 
-              <label for="email_login">Seu e-mail</label>
-              <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+              <label for="senha_login">Sua senha</label>
+              <input id="senha_login" name="senha_login" required="required" type="password" placeholder="ex. senha" /> 
             </p>
              
             <p> 
@@ -35,7 +36,7 @@
             </p>
              
             <p> 
-              <input type="submit" value="Logar" /> 
+              <input type="submit" onclick="logar()" /> 
             </p>
              
             <p class="link">
@@ -85,5 +86,6 @@
         </div>
       </div>
     </div>  
+    <script src="script.js"></script>
   </body>
   </html>
