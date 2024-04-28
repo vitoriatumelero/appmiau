@@ -11,45 +11,34 @@
     <div class="content">
         <h1>Formulário de preferências</h1>
         <form id="form">
-            <div>
-                <input type="text" placeholder="Digite seu nome" class="inputs required">
-            </div>
-            <div>
-                <input type="text" placeholder="Digite seu número de telefone" class="inputs required" >
-            </div>
-            <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10" placeholder="Fale um pouco sobre você..."></textarea>
-            <p>Sexo:</p>
+            <p> <h2>
+                O que você considera extremamente necessário em seu futuro animal (lembre-se isso é apenas para filtragem não quer dizer que o animal seguirá todos os requisitos):<br>
+            </h2> 
+            </p>
             <div class="box-select">
                 <div>
-                    <input type="radio" id="m" value="m" name="sexo">
-                    <label for="m">Masculino</label>
+                    <input type="checkbox" id="m" value="m" name="preferências">
+                    <label for="m">Precisa já estar castrado e vacinado</label>
                 </div>
                 <div>
-                    <input type="radio" id="f" value="f" name="sexo">
-                    <label for="f">Feminino</label>
+                    <input type="checkbox" id="f" value="f" name="preferências">
+                    <label for="f">Não pode possuir nenhuma doença/alergia</label>
                 </div>
                 <div>
-                    <input type="radio" id="o" value="o" name="sexo">
-                    <label for="o">Outro</label>
-                </div>
-            </div>
-            <p>Já possui animais de estimação ?</p>
-            <div class="box-select">
-                <div>
-                    <input type="radio" id="nenhum" value="nenhum" name="quantidade_animais">
-                    <label for="nenhum">Não, nenhum.</label>
+                    <input type="checkbox" id="o" value="o" name="preferências">
+                    <label for="o">Precisa ser ativo e brincalhão (tenha a disponibilidade de sair passear)</label>
                 </div>
                 <div>
-                    <input type="radio" id="um" value="um" name="quantidade_animais">
-                    <label for="um">Sim, um.</label>
+                    <input type="checkbox" id="nenhum" value="nenhum" name="preferências">
+                    <label for="nenhum">Não pode ser peludo/ soltar muito pelo</label>
                 </div>
                 <div>
-                    <input type="radio" id="dois" value="dois" name="quantidade_animais">
-                    <label for="dois">Sim, dois.</label>
+                    <input type="checkbox" id="um" value="um" name="preferências">
+                    <label for="um">Não aceitaria adotar um animal especial (especial não é doente, seriam os amputados, cegos, paraplégicos, etc)</label>
                 </div>
                 <div>
-                    <input type="radio" id="tres" value="tres" name="quantidade_animais">
-                    <label for="tres">Sim, três ou mais.</label>
+                    <input type="checkbox" id="dois" value="dois" name="preferências">
+                    <label for="dois">Tenho apenas preferência nos itens que assinalei, não é extrema necessidade</label>
                 </div>
             </div>
             <button type="button" id="enviar">Enviar</button>
@@ -67,7 +56,7 @@
         event.preventDefault();
 
         // Redireciona para a página desejada
-        window.location.href = 'form_adocao.html';
+        window.location.href = 'pagina_adocao.html';
     });
 </script>
 </html>
