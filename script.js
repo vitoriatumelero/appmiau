@@ -4,7 +4,10 @@ function logar(){
 
     if (login === "vitoria" && senha === "vitoria") {
         alert('Sucesso!');
+        window.location.href = "home.html";
+        return false; // Evita o envio padrão do formulário
       } else {
         alert('Credenciais inválidas. Por favor, tente novamente.');
+        return false; // Evita o envio padrão do formulário
       }
     }
