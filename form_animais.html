@@ -12,25 +12,34 @@
         <h1>Criação do perfil do animal </h1>
         <form id="form">
             <div>
-                <input type="text" placeholder="Nome da ONG" class="inputs required">
+                <input type="text" placeholder="Nome do animal" class="inputs required">
             </div>
-            <div>
-                <input type="text" placeholder="Digite o telefone para contato" class="inputs required" >
-            </div>
-            <textarea class="inputs" name="descricao" id="descricao" cols="10" rows="10" placeholder="Fale um pouco sobre sua ong e coloque as redes sociais dela."></textarea>
-            <p>Tem a ong a aproximadamente: </p>
+            <textarea class="inputs" name="descricao" id="descricao" cols="10" rows="10" placeholder="Fale um pouco sobre o animal, isso será exibido aos adotantes do aplicativo."></textarea>
+            <p>Assinale apenas as alternativas que condizem com o animal cadastrado: </p>
             <div class="box-select">
                 <div>
-                    <input type="radio" id="m" value="m" name="sexo">
-                    <label for="m">Menos de um ano</label>
+                    <input type="checkbox" id="m" value="m" name="sexo">
+                    <label for="m">É castrado e vacinado</label>
                 </div>
                 <div>
-                    <input type="radio" id="f" value="f" name="sexo">
-                    <label for="f">Entre um e dois anos</label>
+                    <input type="checkbox" id="f" value="f" name="sexo">
+                    <label for="f">Possui alguma doença</label>
                 </div>
                 <div>
-                    <input type="radio" id="o" value="o" name="sexo">
-                    <label for="o">Mais de 2 anos</label>
+                    <input type="checkbox" id="o" value="o" name="sexo">
+                    <label for="o">Saudável (predominantemente)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="o" value="o" name="sexo">
+                    <label for="o">Não tem raça definida</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="o" value="o" name="sexo">
+                    <label for="o">Possui alergia</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="o" value="o" name="sexo">
+                    <label for="o">Se possui doença, toma remédio e/ou consulta o veterinário periodicamente</label>
                 </div>
                 <div>
                     <label class="picture" for="picture__input" tabIndex="0">
@@ -55,7 +64,7 @@
         event.preventDefault();
 
         // Redireciona para a página desejada
-        window.location.href = 'form_animais.html';
+        window.location.href = 'inicial_ong.html';
     });
     const inputFile = document.querySelector("#picture__input");
 const pictureImage = document.querySelector(".picture__image");
