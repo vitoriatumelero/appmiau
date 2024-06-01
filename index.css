@@ -3,6 +3,12 @@ body{
     background-color: #556b2f;
     font-family:'Times New Roman', Times, serif
 }
+.container {  
+    display: grid;  
+    grid-gap: 5px;  
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);  
+}
 ul{
     display:flex;
     justify-content: space-between;
