@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário ONG</title>
+    <link rel="stylesheet" href="form_ong.css">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+<body>
+    <div class="content">
+        <h1>Criação do perfil da sua ONG</h1>
+        <form id="form">
+            <div>
+                <input type="text" placeholder="Nome da ONG" class="inputs required">
+            </div>
+            <div>
+                <input type="text" placeholder="Digite o telefone para contato" class="inputs required" >
+            </div>
+            <textarea class="inputs" name="descricao" id="descricao" cols="10" rows="10" placeholder="Fale um pouco sobre sua ong e coloque as redes sociais dela."></textarea>
+            <p>Tem a ong a aproximadamente: </p>
+            <div class="box-select">
+                <div>
+                    <input type="radio" id="m" value="m" name="sexo">
+                    <label for="m">Menos de um ano</label>
+                </div>
+                <div>
+                    <input type="radio" id="f" value="f" name="sexo">
+                    <label for="f">Entre um e dois anos</label>
+                </div>
+                <div>
+                    <input type="radio" id="o" value="o" name="sexo">
+                    <label for="o">Mais de 2 anos</label>
+                </div>
+            </div> 
+            <button type="button" id="enviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    // Captura o formulário e o botão de enviar
+    const form = document.getElementById('form');
+    const enviarButton = document.getElementById('enviar');
+
+    // Adiciona um evento de clique ao botão de enviar
+    enviarButton.addEventListener('click', function(event) {
+        // Evita o comportamento padrão do formulário (recarregar a página)
+        event.preventDefault();
+
+        // Redireciona para a página desejada
+        window.location.href = 'form_animais.html';
+    });
+</script>
+</html>
