@@ -1,5 +1,14 @@
-body{
-    color: aliceblue;
-    background-color: #556b2f;
-    font-family:'Times New Roman', Times, serif
+a {
+    background-color: #df87bb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a:hover {
+    background-color: #eecde2;
+    color: #556b2f;
 }
